@@ -1,0 +1,17 @@
+---
+ aws_access_key: "AKIATEEOWMZ5NVY54THZ"
+ aws_secret_key: "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"
+
+ application: "wordpress"
+ target_env: "prod"
+ aws_region: "us-east-1"
+ aws_region_short: "ue1"
+ aws_region_az: "c"
+ vpc_name: "vpc-{{ aws_region_short }}-{{ target_env }}-{{ application }}"
+ vpc_cidr_block: "172.27.0.0/16"
+ public_subnet_1_cidr: "172.27.0.0/18"
+ public_subnet_2_cidr: "172.27.64.0/18"
+ private_subnet_1_cidr: "172.27.128.0/18"
+ private_subnet_2_cidr: "172.27.192.0/18"
+ keypair_name: "gustavo-key"
+ ssh_pubkey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7U7Wy71ucW7weCi3YaFBCRlmY1B9EVAffeih1vidN9ApNcGYIIWxY56/IoCbNpx1+0OD9NYEFvewI/Xh45vRYXGb6spgPIvVI3BOIu8srMVmU0r7eJgS0w0rXIRhsUdFQQh1TKCGqsdnEYYZE9q7miBr+l4TNlkYKaWQkPXpfb437T2d/wrqiZ9kiwr8KLr7w0Sk6Gm8hYeabkXBxUPNQPc/ABCjpHbNvLo6pqRYh+WF6kcNpr2tu/OUQjjW8dyRUc/mOIWvobr6RUxBG1Mvu802clzwzZ0r9g1EQQ8937XwTLXgOIOxxN5OljWVxOy7HjYVIqf/o9jr+/3VN4Jp3 gustavo@ubuntu'
